@@ -1,0 +1,6 @@
+{
+  "name": "Psicologia Clínica",
+  "description": "Website institucional para apresentação e agendamento de consultas com psicóloga.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

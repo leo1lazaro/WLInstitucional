@@ -1,0 +1,73 @@
+.TestimonialCard-container {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.TestimonialCard-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(125, 146, 118, 0.08);
+  border-color: var(--color-primary-dark);
+}
+
+.TestimonialCard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TestimonialCard-quoteIcon {
+  color: rgba(125, 146, 118, 0.3);
+}
+
+.TestimonialCard-authorInitials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(125, 146, 118, 0.1);
+  color: var(--color-primary-dark);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.TestimonialCard-description {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.6;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.TestimonialCard-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+}
+
+.TestimonialCard-authorName {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.TestimonialCard-verified {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-muted);
+}

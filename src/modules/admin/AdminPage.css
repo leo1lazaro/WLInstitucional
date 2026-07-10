@@ -1,0 +1,339 @@
+.AdminPage-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-background);
+  animation: fadeInPage 0.4s ease-out forwards;
+  min-height: calc(100vh - 72px);
+}
+
+.AdminPage-hero {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 48px 24px;
+  width: 100%;
+}
+
+.AdminPage-heroWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.AdminPage-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary-dark);
+  background-color: rgba(125, 146, 118, 0.1);
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.AdminPage-title {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.AdminPage-subtitle {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--color-muted);
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+.AdminPage-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Alert Boxes */
+.AdminPage-alert {
+  padding: 16px 20px;
+  border-radius: var(--radius-base);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideDown 0.3s ease-out;
+}
+
+.AdminPage-alertSuccess {
+  background-color: #e6f4ea;
+  color: #137333;
+  border: 1px solid #ceead6;
+}
+
+.AdminPage-alertError {
+  background-color: #fce8e6;
+  color: #c5221f;
+  border: 1px solid #fad2cf;
+}
+
+/* Layout */
+.AdminPage-layout {
+  display: grid;
+  grid-template-columns: 2.1fr 1.1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.AdminPage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.AdminPage-formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.AdminPage-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Fields */
+.AdminPage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.AdminPage-label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.AdminPage-input,
+.AdminPage-textarea {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: 12px;
+  width: 100%;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.AdminPage-input:focus,
+.AdminPage-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 0 3px rgba(125, 146, 118, 0.15);
+}
+
+.AdminPage-textarea {
+  resize: vertical;
+}
+
+.AdminPage-colorPickerWrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.AdminPage-colorInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.AdminPage-colorInput::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.AdminPage-colorInput::-moz-color-swatch {
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.AdminPage-inputColorHex {
+  max-width: 120px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.AdminPage-helpText {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Actions */
+.AdminPage-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 24px;
+}
+
+/* Testimonial Form inside Card */
+.AdminPage-testimonialSubForm {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.AdminPage-btnAddTestimonial {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+/* Testimonials List inside Sidebar */
+.AdminPage-testimonialsListWrapper {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.AdminPage-listTitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+.AdminPage-noTestimonials {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-muted);
+  font-style: italic;
+  padding: 12px 0;
+}
+
+.AdminPage-testimonialsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.AdminPage-testimonialItem {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.AdminPage-testimonialItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.AdminPage-testimonialItemAuthor {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.AdminPage-testimonialItemText {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin: 0;
+  font-style: italic;
+}
+
+.AdminPage-btnDelete {
+  background: none;
+  border: none;
+  color: #c5221f;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.AdminPage-btnDelete:hover {
+  background-color: #fce8e6;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .AdminPage-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .AdminPage-hero {
+    padding: 32px 16px;
+  }
+  .AdminPage-title {
+    font-size: 26px;
+  }
+  .AdminPage-content {
+    padding: 20px 16px 48px;
+  }
+  .AdminPage-actions {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}
